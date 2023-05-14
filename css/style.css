@@ -4,12 +4,6 @@ body{
     font-family: 'Ubuntu', sans-serif;
     color: white;
     padding: 0;
-}
-header{
-    background-color: black;
-    color: wheat;
-    padding: 2rem;
-    margin: 0;
     
 }
 h1 {
@@ -33,20 +27,26 @@ h2{
 
 nav ul{
     list-style: none;
-    margin:0;
-    padding: 5rem;
+    margin:4em;
+    padding: 0;
     justify-content: center;
     display:flex
+
 }
 nav li{
-    margin: 0 5rem;
+    margin: 0;
+    padding: 0;
+    flex: auto;
+    text-align: center;
+
 }
 nav a {
     background-color: rgb(147, 147, 58);
     color: rgb(3, 3, 3);
     text-decoration:wavy;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 0;
+    margin: 1em;
     font-size: 1.2rem;
     border-radius: 5px;
 
@@ -64,19 +64,77 @@ p{
    font-size: 1.2rem;
    
 }
-.listado{
+p ::before{
+    content: "🛠";
+}
+.section{
    
     background-color: rgb(32, 48, 98);
     color: rgb(255, 87, 157);
-    text-decoration:wavy;
-    padding: 1rem 2rem;
-    margin: 0;
-    font-size:1.7rem;
+    text-decoration:none;
+    margin:0;
     border-radius: 5px;
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    flex: 1 0 auto;
+    
+   
 
 }
 footer{
     margin: 0;
     padding:3rem;
     background-color: black;
+}
+
+@media  screen and(min-width:52em) {
+    .header{
+        max-width: 52em;
+    }
+}
+
+@media  screen and(min-width:52em) {
+    .páginas{
+        max-width: 52em;
+    }
+}
+@media  screen and(min-width:52em) {
+    .section{
+        max-width: 52em;
+    }
+}
+@media  screen and(min-width:52em) {
+    .p{
+        max-width: 52em;
+    }
+    
+}
+@media  screen and(min-width:52em) {
+    .footer{
+        max-width: 52em;
+    }
+}
+.section{
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #fff;
+}
+.header{
+    
+    list-style: none;
+    margin:0.6em 1em; 
+    padding:0;
+    justify-content:space-between;
+    display:flex
+}
+figure{
+    margin: 0;
+}
+img{
+    display:block;
+    border:0;
+    width: 10%;
+    height: auto;
+    margin: 5em;
 }
