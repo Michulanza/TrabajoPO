@@ -1,5 +1,5 @@
 body{ 
-    padding: 4em;
+    padding: 0;
     background: linear-gradient(90deg, #22c1c3, #fdbb2d);
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -19,6 +19,8 @@ body{
     padding: 1em 0;
     font-weight: 300;
     color: white;
+    margin-left: 2em;
+
 }
 /* ACA PROBAMOS BOTONES */
 .páginas{
@@ -57,33 +59,36 @@ body{
     color: rgb(45, 16, 152);
 }
 .páginas ul li a:hover {
-    color: rgb(245, 217, 38);
+    color: rgb(9, 126, 185);
 }
 /* ACA TERMINA */
 .card a {
     color: rgb(247, 241, 241);
-    text-decoration: none;
+    
 }
 .card a :hover{
     box-shadow: 3px 3px 8px #0c0c0c; 
 }
 .card-content {
-     justify-content: space-evenly;
+     justify-content: space-between;
+    
 }
 .card-content h2{
     margin-top: 0;
     margin-bottom: .5em;
-    font-size: 95%;
+    font-size: 80%;
+    
     
 }
 .card-content p {
-    font-size: 90%;
+    font-size: 100%;
     
 
 }
 figure{
+    
     margin: 1em;
-    padding: 0.5em;
+    padding: 0;
 }
 img{
 
@@ -93,9 +98,9 @@ img{
     height:auto;
 }
 .card{
-    padding: auto;
+    padding: 0;
     background: linear-gradient(90deg, #070707, #fdbb2d);
-    margin-bottom: 2em;
+    margin-bottom: .5em;
     width: 33%;   
     height: auto; 
     color: rgb(239, 231, 231);
@@ -110,5 +115,26 @@ img{
     
 }
 .descripcion {
-    margin: 1em;
+    text-align:end;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
+footer {
+    width: 100%;
+    height: 18%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    border-radius: 50px;
+}
+#datos {
+    width: 50%;
+    height: 15%;
+    float: left;
+    padding: 1em;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #22c1c3, #f4f2ee);
+    border-radius: 5px;
+    flex: 1 0 auto;
+   }

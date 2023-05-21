@@ -36,7 +36,7 @@ header{
     display: inline-block;
     padding: 10px;
     
-    background: linear-gradient(90deg, #8fbe0f, #510999);
+    background: linear-gradient(90deg, #aee21f, #8017e9);
     color: black;
     border-radius: 7px;
     text-decoration: none;
@@ -63,15 +63,15 @@ header{
     display: block;   
 }
 #flyer1 {
-    margin: 0;  
+    margin-left: 3em;  
 }
 #imagen1 {
     width: 33%;
-    height: auto;
+    height:auto ;
     float: left;
     background-size: cover;
-    padding: 1em;
-    border-radius: 30px;
+    padding: 2em;
+    border-radius: 70px;
     flex: 1 0 auto;
     display: flex;
     justify-content: space-between;
@@ -81,8 +81,9 @@ header{
     height: auto;
     background-color: aqua;
     float: right;
-    margin: auto ;
-    padding: .5em;
+    margin-top: 2em;
+    margin-right: 2em ;
+    padding: 1em;
     border-radius: 50px;
 }
 #titulo_principal {
@@ -126,10 +127,11 @@ header{
 #destacado {
     width: 33%; 
     height: auto;
-    background: linear-gradient(90deg, #f70642, #f7f6f5);
+    background: linear-gradient(90deg, #dfd6d8, #f2a65a);
     float: right;
+    margin-top: 4em;
     margin-left: 0;
-    padding:auto;
+    padding:1em;
     border-radius:25px;
     box-sizing: border-box;
     display: flex;
@@ -138,8 +140,8 @@ header{
 }
 #contenido_destacado {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100%;
-    font-weight: bold;   
+    font-size: 120%;
+    font-weight:lighter;   
 }
 #flyer3 {
     margin: 0;
