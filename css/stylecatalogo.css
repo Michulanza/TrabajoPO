@@ -1,12 +1,18 @@
-body{ background-color: #4180f5;
+body{ 
+    padding: 4em;
+    background: linear-gradient(90deg, #22c1c3, #fdbb2d);
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .cabecera{
-    background-color: #4180f5;
+    
+    background: linear-gradient(90deg, #070707, #fdbb2d);
+    border-radius: 1em;
+   
 }
 .centrado{
     margin: 0 auto;
-    padding: 0 .8em;
+    padding: 1em .8em;
 }
 .titulo1{
     margin: 0 0 1em;
@@ -14,15 +20,55 @@ body{ background-color: #4180f5;
     font-weight: 300;
     color: white;
 }
-.card a{
-    color: white;
+/* ACA PROBAMOS BOTONES */
+.páginas{
+    width: 40%;
+    height: 4%;
+    float:right;
+    margin-top: 15px;
+}
+.páginas ul {
+    margin: 1em 1em;
+    padding: 1em;
+    list-style-type: none;
+    float: right;
+}
+.páginas ul li {
+    display: inline;
+    flex: 1 0 auto;
+}
+.páginas ul li a {
+    display: inline-block;
+    padding: 10px;
+    
+    background: linear-gradient(90deg, #f3f3ed, #d69005);
+    color: black;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight:bold;
+}
+.páginas ul li a:active {
+    color: gold;
+}
+.páginas ul li a:visited {
+    color: #0b0b0b;
+}
+.páginas ul li a:link {
+    color: rgb(45, 16, 152);
+}
+.páginas ul li a:hover {
+    color: rgb(245, 217, 38);
+}
+/* ACA TERMINA */
+.card a {
+    color: rgb(247, 241, 241);
     text-decoration: none;
 }
-.card a:hover{
-    box-shadow: 3px 3px 8px #c78513; 
+.card a :hover{
+    box-shadow: 3px 3px 8px #0c0c0c; 
 }
-.card-content{
-    padding: 1.4em;
+.card-content {
+     justify-content: space-evenly;
 }
 .card-content h2{
     margin-top: 0;
@@ -32,25 +78,37 @@ body{ background-color: #4180f5;
 }
 .card-content p {
     font-size: 90%;
+    
+
 }
 figure{
-    margin: 0;
+    margin: 1em;
+    padding: 0.5em;
 }
 img{
+
     display: block;
     border: 0;
     width: 100%;
     height:auto;
 }
 .card{
-background-color: rgb(6, 6, 6);
-margin-bottom: 2em;
-width: 33%;    
-color: rgb(239, 231, 231);
+    padding: auto;
+    background: linear-gradient(90deg, #070707, #fdbb2d);
+    margin-bottom: 2em;
+    width: 33%;   
+    height: auto; 
+    color: rgb(239, 231, 231);
 
 }
 .cards{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap-reverse;
+    box-sizing:content-box;
     justify-content: space-between;
+    
+}
+.descripcion {
+    margin: 1em;
 }
