@@ -1,20 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="home" href="../TPO/tpo.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@200&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilopresupuesto.css">
     <title>presupuestos</title>
 </head>
 <body>
-    <div>
-        <ul>
-            <li>
-                <a href="../TPO/tpo.html">HOME</a>
-            </li>
-        </ul>
+</div>
+<nav class="páginas">
+    <ul>
+        <li> 
+
+            <a href="../index.html">Inicio</a>
+            <a href="../catalogo.html">Catálogo</a>
+            <a href="../presupuestos.html">Presupuestos</a>
+            <a href="../contacto.html">Contacto</a>
+            
+        </li>
+    </ul>
+</nav>
+<div class="titulo">
+    <h1>PRESUPUESTOS</h1>
+</div>
+    <div class="container">
+        <form action="" class="form">
+            <p class="form-titulo">Regístrate</p>
+            <div class="form-input myname">
+                <input type="text" id="myname">
+                <label for="myname">Nombre</label>
+                <p class="mensajeError"></p>
+            </div>
+            <div class="form-input surname">
+                <input type="text" id="surname">
+                <label for="surname">Apellidos</label>
+              <p class="mensajeError"></p>
+            </div>
+            <div class="form-input email">
+                <input type="mail" id="email">
+                <label for="email">Correo Electrónico</label>
+              <p class="mensajeError"></p>
+            </div>
+            <div class="form-input mobile">
+                <input type="number" id="mobile">
+                <label for="mobile">Celular</label>
+              <p class="mensajeError"></p>
+            </div>
+            <div class="form-input password">
+                <input type="password" id="password">
+                <label for="password">Contraseña</label>
+              <p class="mensajeError"></p>
+            </div>
+            <div class="form-input repeatPassword">
+                <input type="password" id="repeatPassword">
+                <label for="password">Repetir Contraseña</label>
+              <p class="mensajeError"></p>
+            </div>
+            <div class="form-termsAndConditios termsAndConditions">
+                <input type="checkbox" id="termsAndConditions">
+                <label for="termsAndConditions">He leído y acepto los</label>
+                <a href="#">Términos y condiciones de uso</a>
+              <p class="mensajeError"></p>
+            </div>
+            <div class="form-boton">
+                <input type="submit" value="enviar">
+                <p class="mensajeCorrecto"></p>
+            </div>
+        </form>
     </div>
-    
+
+    <footer>
+        <div id="datos">
+        <p id="web">&copy;  Web diseñanada por Comisión 23013 // <br> Programa de Codo a Codo 4.0 - 2023 ~ Michelle Lanza ~</p>
+        </div>
+    </footer>
+    <script src="js/form.js"></script>
 </body>
 </html>

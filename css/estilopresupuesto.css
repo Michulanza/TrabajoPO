@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background: linear-gradient(90deg, #11d9e0, #fdbb2d);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2rem;
+}
+
+.páginas ul li{
+    display: inline;
+    flex: 1 0 auto;
+}
+.páginas ul li a {
+    display: inline-block;
+    padding: 10px;
+    background: linear-gradient(90deg, #f1e9e6, #f4571e);
+    color: black;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight:bold;
+}
+.páginas ul li a:hover{
+    background: linear-gradient(90deg, #dbeded, #01b015);
+    transition: 1s;
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+
+
+.titulo{
+   
+    text-align: center;
+    
+}
+
+
+.container {
+    max-width: 60%;
+    margin: auto;
+}
+.form{
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    background: linear-gradient(90deg, #1c9a9c, #17c907);
+    margin: auto;
+    margin-top: 2rem;
+    padding: 30px 50px;
+}
+.form-titulo{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2rem;
+    letter-spacing: 3px;
+}
+
+.form-input {
+    margin-bottom: 30px;
+}
+
+.form-input label {
+    display: block;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.form-input input {
+    width: 60%;
+    font-size: 20px;
+    
+}
+.form-boton input{
+    background: linear-gradient(90deg, #22c1c3, #fdbb2d);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.form-boton input:hover{
+    background: linear-gradient(90deg, #dbeded, #0a5fd5);
+    transition: 1s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.mensajeError {
+    color: rgb(140, 6, 6);
+    margin-top:0px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.mensajeCorrecto{
+    text-align: center;
+    
+}
