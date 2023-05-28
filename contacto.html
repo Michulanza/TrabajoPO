@@ -1,16 +1,10 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="home" href="../TPO/index.html">
-    <link rel="stylesheet" href="css/stylecontacto.css">
-    <title>contacto</title>
-</head>
-<body>
-    <header>
-        <div>
+  <title>LanzayLanzajs</title>
+   <header>
+        <div class="item">
             <h1>CONTACTO</h1>
         </div>
         <nav class="páginas">
@@ -25,6 +19,121 @@
                 </li>
             </ul>
         </nav>
-</header>
+  <style>
+    
+body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(90deg, #22c1c3, #fdbb2d);
+      padding: 20px;
+    }
+.páginas{
+    width: 40%;
+    height: 4%;
+    margin-top: 1px;
+}
+.páginas ul {
+    margin: 2em 1em;
+    padding: 1em;
+    list-style-type:none;
+   
+}
+.páginas ul li {
+    display: inline;
+    flex: 1 0 auto;
+}
+.páginas ul li a {
+    display: inline-block;
+    padding: 10px;
+    
+    background: linear-gradient(90deg, #adb693, #3e0379);
+    color: black;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight:bold;
+}
+.páginas ul li a:active {
+    color: gold;
+}
+.páginas ul li a:visited {
+    color: #0b0b0b;
+}
+.páginas ul li a:link {
+    color: rgb(45, 16, 152);
+}
+.páginas ul li a:hover {
+    color: rgb(245, 217, 38);
+}
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #d1caca;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(238, 1, 1, 0.1);
+    }
+    h1 {
+      text-align:center;
+      padding: 1rem;
+    }
+    .item{
+        background-color: rgb(71, 206, 255);
+        width: 100%;
+        height: 60px;
+        transition: background-color, width 2s ;
+    }
+    .item:hover {
+        background: #d4c40b;
+        width: 0%;
+        
+    }
+    .employee-card {
+      background-color: #efe7e7;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .employee-card h2 {
+      margin-top: 0;
+    }
+    .employee-card p {
+      margin-bottom: 10px;
+      color: rgb(41, 103, 156);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>NUESTROS TALENTOS</h2>
+    <div id="employee-list"></div>
+  </div>
+
+  <script>
+   
+    document.addEventListener('DOMContentLoaded', getEmployees);
+
+    function getEmployees() {
+      const employees = [
+        { name: 'Damian Lanza', position: 'Dueño/Diseñador', email: 'dami.lanza@gmail.com ' },
+        { name: 'Celia Lanza', position: 'Diseñadora de Interiores', email: 'celia.lanza@gmail.com ' },
+        { name: 'Fabian Lanza', position: 'Pintor', email: 'fabi.lanza@gmail.com ' },
+        { name: 'Jose Lanza', position: 'Carpintero', email: 'jose.lanza@gmail.com ' },
+        { name: 'Marcelo Lanza', position: 'Herrero', email: 'marce.lanza@gmail.com ' }
+      ];
+
+      const employeeList = document.getElementById('employee-list');
+
+      employees.forEach(employee => {
+        const employeeCard = document.createElement('div');
+        employeeCard.className = 'employee-card';
+        employeeCard.innerHTML = `
+          <h2>${employee.name}</h2>
+          <p><strong>Cargo:</strong> ${employee.position}</p>
+          <p><strong>Email:</strong> ${employee.email}</p>
+        `;
+        employeeList.appendChild(employeeCard);
+      });
+    }
+  </script>
 </body>
 </html>
